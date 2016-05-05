@@ -1,7 +1,7 @@
 {
-  "name": "ample",
+  "name": "project_name",
   "version": "1.0.0",
-  "description": "ample property website",
+  "description": "description",
   "repository": {
     "type": "git",
     "url": "?.git"

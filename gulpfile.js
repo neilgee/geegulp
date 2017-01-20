@@ -1,3 +1,6 @@
+// Install packahes as listed in package.json file by running 'npm i' from working directory
+// http://stackoverflow.com/questions/34922749/how-to-install-multiple-gulp-packages-at-once-using-node
+
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var browserSync = require('browser-sync').create();

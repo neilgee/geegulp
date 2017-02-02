@@ -23,12 +23,12 @@ var postcssOptions = {
 
 
 
-//example
+// Example
 gulp.task('logo', function() {
 	gutil.log('Workflows suck');
 });
 
-//act on a specific file - this was going the other way - work in rems and it adds px
+// Act on a specific file - this was going the other way - work in rems and it adds px
 gulp.task('remy', function(){
 	gulp.src('style.css')
 		.pipe(pixrem({ rootValue: 10 }))
@@ -37,26 +37,26 @@ gulp.task('remy', function(){
 
 
 
-//https://github.com/cuth/gulp-pxtorem
-//https://github.com/cuth/postcss-pxtorem
+// https://github.com/cuth/gulp-pxtorem
+// https://github.com/cuth/postcss-pxtorem
 gulp.task('rem', function() {
     gulp.src('style.css')
 		.pipe(pxtorem(pxtoremOptions, postcssOptions))
         .pipe(gulp.dest('.'));
 });
 
-//autoprefix lets see if this works
+// Autoprefix last 3 versions - override existing stylesheet
 gulp.task('prefix', function () {
 	return gulp.src('style.css')
 		.pipe(autoprefixer({
-			browsers: ['last 2 versions'],
+			browsers: ['last 3 versions'],
 			cascade: false
 		}))
-		.pipe(gulp.dest('newstyle'));
+		.pipe(gulp.dest('./'));
 });
 
 
-//fire up browserSync
+// Fire up browserSync
 gulp.task('sync', function() {
     browserSync.init({
         proxy: "my_site.dev",
@@ -66,13 +66,13 @@ gulp.task('sync', function() {
     });
 });
 
-//watching a file
+// Watching a file
 gulp.task('watch', function(){
 	gulp.watch('style.css', ['remy']);
 });
 
 
-//compressing the images
+// Compressing the images
 gulp.task('compress', () => {
     return gulp.src('images/*')
         .pipe(imagemin({
@@ -86,5 +86,5 @@ gulp.task('compress', () => {
         .pipe(gulp.dest('dist/images'));
 });
 
-//the default task - just run gulp - pass in more tasks by adding the task in the array
+// The default task - just run gulp - pass in more tasks by adding the task in the array
 gulp.task('default',['sync', 'compress']);

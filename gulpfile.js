@@ -60,14 +60,11 @@ gulp.task('prefix', function () {
 gulp.task('sync', function() {
     browserSync.init({
         proxy: "my_site.dev",
-		//files: "*.css,*.php,css/*css,lib/*.php",
-		xip: true
+	files: ["./*.css","*.php","css/*css","lib/*.php"],
+	xip: true
 
     });
-	// Run tasks when files change.
-	gulp.sync( paths.styles, [ 'styles' ] );
-	gulp.sync( paths.scripts, [ 'scripts' ] );
-        gulp.sync( paths.php ).on( 'change', browsersync.reload );
+
 });
 
 // Watching a file

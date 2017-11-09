@@ -75,7 +75,7 @@ gulp.task('watch', function(){
 
 // Compressing the images
 gulp.task('compress', () => {
-    return gulp.src('images/*')
+    return gulp.src('./../../uploads/**/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [
@@ -84,7 +84,8 @@ gulp.task('compress', () => {
             ],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('dist/images'));
+        .pipe(gulp.dest('./../../uploads/'));
+
 });
 
 // The default task - just run gulp - pass in more tasks by adding the task in the array

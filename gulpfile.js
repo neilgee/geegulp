@@ -59,7 +59,7 @@ gulp.task('prefix', function () {
 // Fire up browserSync
 gulp.task('sync', function() {
     browserSync.init({
-        proxy: "my_site.dev",
+        proxy: "my_site.test",
 	files: ["./*.css","*.php","css/*css","lib/*.php", "includes/*.php", "includes-child/*.php", "includes-child/woocommerce/*.php", "includes-child/woocommerce/*.css"],
 	xip: true
 

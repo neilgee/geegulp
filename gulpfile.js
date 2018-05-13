@@ -62,7 +62,7 @@ gulp.task('prefix', function () {
 // Fire up browserSync
 gulp.task('sync', function() {
     browserSync.init({
-        proxy: sitename +'.test",
+        proxy: sitename +'.test',
 	xip: true,
 	// or https
 // 	proxy: 'https://' + siteName + '.test',

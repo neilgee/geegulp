@@ -9,6 +9,9 @@ var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 
+var sitename = 'mysite'; // set your siteName here
+var username = 'neilg'; // set your macOS userName here
+
 
 var pxtorem = require('gulp-pxtorem');
 
@@ -59,9 +62,21 @@ gulp.task('prefix', function () {
 // Fire up browserSync
 gulp.task('sync', function() {
     browserSync.init({
-        proxy: "my_site.test",
+        proxy: sitename +'.test",
+	xip: true,
+	// or https
+// 	proxy: 'https://' + siteName + '.test',
+//         host: siteName + '.test',
+//         open: 'external',
+//         port: 8000,
+//         https: {
+//             key:
+//                 '/Users/' + username + '/.valet/Certificates/' + sitename + '.test.key',
+//             cert:
+//                 '/Users/' + username + '/.valet/Certificates/' + sitename + '.test.crt',
+	    
 	files: ["./*.css","*.php","css/*css","lib/*.php", "includes/*.php", "includes-child/*.php", "includes-child/woocommerce/*.php", "includes-child/woocommerce/*.css"],
-	xip: true
+	
 
     });
 

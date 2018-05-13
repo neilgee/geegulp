@@ -65,8 +65,8 @@ gulp.task('sync', function() {
         proxy: sitename +'.test',
 	xip: true,
 	// or https
-// 	proxy: 'https://' + siteName + '.test',
-//         host: siteName + '.test',
+// 	proxy: 'https://' + sitename + '.test',
+//         host: sitename + '.test',
 //         open: 'external',
 //         port: 8000,
 //         https: {
@@ -74,6 +74,7 @@ gulp.task('sync', function() {
 //                 '/Users/' + username + '/.valet/Certificates/' + sitename + '.test.key',
 //             cert:
 //                 '/Users/' + username + '/.valet/Certificates/' + sitename + '.test.crt',
+//   	 },	
 	    
 	files: ["./*.css","*.php","css/*css","lib/*.php", "includes/*.php", "includes-child/*.php", "includes-child/woocommerce/*.php", "includes-child/woocommerce/*.css"],
 	

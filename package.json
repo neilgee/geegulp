@@ -8,7 +8,7 @@
   },
   "author": "Neil Gowran",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
+    "browser-sync": "^2.24.5",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-imagemin": "^3.0.2",

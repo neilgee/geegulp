@@ -71,9 +71,9 @@ gulp.task('sync', function() {
 //         port: 8000,
 //         https: {
 //             key:
-//                 '/Users/' + username + '/.valet/Certificates/' + sitename + '.test.key',
+//                 '/Users/' + username + '/.config/valet/Certificates/' + sitename + '.test.key',
 //             cert:
-//                 '/Users/' + username + '/.valet/Certificates/' + sitename + '.test.crt',
+//                 '/Users/' + username + '/.config/valet/Certificates/' + sitename + '.test.crt',
 //   	 },	
 	    
 	files: ["./*.css","*.php","css/*css","lib/*.php", "includes/*.php", "includes-child/*.php", "includes-child/woocommerce/*.php", "includes-child/woocommerce/*.css"],

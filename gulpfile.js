@@ -1,5 +1,6 @@
 // Install packages as listed in package.json file by running 'npm i' from working directory
 // Updated for Gulp 4 & Node 12
+// Ref - https://medium.com/swlh/setting-up-gulp-4-0-2-for-bootstrap-sass-and-browsersync-7917f5f5d2c5
 
 
 const gulp = require("gulp");

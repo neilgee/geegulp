@@ -8,15 +8,15 @@
   },
   "author": "Neil Gowran",
   "devDependencies": {
-    "browser-sync": "^2.24.5",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-imagemin": "^3.0.2",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-imagemin": "^6.1.1",
     "gulp-pixrem": "^1.0.0",
-    "gulp-postcss": "^6.1.0",
-    "gulp-pxtorem": "^2.0.0",
-    "gulp-util": "^3.0.7",
-    "imagemin-pngquant": "^5.0.0",
-    "postcss-pxtorem": "^4.0.0"
+    "gulp-postcss": "^8.0.0",
+    "gulp-pxtorem": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "imagemin-pngquant": "^8.0.0",
+    "postcss-pxtorem": "^4.0.1"
   }
 }

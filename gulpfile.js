@@ -38,3 +38,30 @@ const username = 'neilg'; // set your macOS userName here
 }
 
 exports.default = watch;
+
+
+
+// Optimize Images
+function images() {
+  return gulp
+    .src("./image-fat/*")
+    .pipe(newer("./image-slim/"))
+    .pipe(
+      imagemin([
+        imagemin.gifsicle({ interlaced: true }),
+        imagemin.jpegtran({ progressive: true }),
+        imagemin.optipng({ optimizationLevel: 5 }),
+        imagemin.svgo({
+          plugins: [
+            {
+              removeViewBox: false,
+              collapseGroups: true
+            }
+          ]
+        })
+      ])
+    )
+    .pipe(gulp.dest("./image-slim/"));
+}
+
+exports.images = images;

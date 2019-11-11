@@ -15,5 +15,20 @@
     "gulp-newer": "^1.4.0",
     "gulp-util": "^3.0.8",
     "imagemin-pngquant": "^8.0.0"
-  }
+  },
+
+  "browserslist": [
+    "> 1%",
+    "ie >= 9",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ]
+
 }

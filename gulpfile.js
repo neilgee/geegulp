@@ -1,12 +1,16 @@
 // Install packages as listed in package.json file by running 'npm i' from working directory
 // Updated for Gulp 4 & Node 12
 // Ref - https://medium.com/swlh/setting-up-gulp-4-0-2-for-bootstrap-sass-and-browsersync-7917f5f5d2c5
+// Async used in Autoprefixer function
+// Ref - https://gulpjs.com/docs/en/getting-started/async-completion
+// Browsers - https://github.com/browserslist/browserslist#shareable-configs
 
 
 const gulp = require("gulp");
 const browserSync = require("browser-sync").create();
 const imagemin = require("gulp-imagemin");
 const newer = require("gulp-newer");
+const autoprefixer = require('gulp-autoprefixer');
 
 const sitename = 'shrink'; // set your siteName here
 const username = 'neilg'; // set your macOS userName here
@@ -68,3 +72,16 @@ function images() {
 }
 
 exports.images = images;
+
+
+
+async function prefix() {
+    gulp.src('style.css')
+        .pipe(autoprefixer({
+            cascade: false
+        }))
+        .pipe(gulp.dest('./'))
+}
+
+exports.prefix = prefix;
+

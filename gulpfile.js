@@ -5,6 +5,9 @@
 
 const gulp = require("gulp");
 const browserSync = require("browser-sync").create();
+const imagemin = require("gulp-imagemin");
+const newer = require("gulp-newer");
+
 const sitename = 'shrink'; // set your siteName here
 const username = 'neilg'; // set your macOS userName here
 

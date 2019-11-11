@@ -37,4 +37,4 @@ const username = 'neilg'; // set your macOS userName here
 	gulp.watch('./includes-child/woocommerce/*.css').on('change',browserSync.reload);
 }
 
-exports.watch = watch;
+exports.default = watch;

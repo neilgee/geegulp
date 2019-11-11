@@ -12,11 +12,8 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-imagemin": "^6.1.1",
-    "gulp-pixrem": "^1.0.0",
-    "gulp-postcss": "^8.0.0",
-    "gulp-pxtorem": "^3.0.0",
+    "gulp-newer": "^1.4.0",
     "gulp-util": "^3.0.8",
     "imagemin-pngquant": "^8.0.0",
-    "postcss-pxtorem": "^4.0.1"
   }
 }

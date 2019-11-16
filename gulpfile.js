@@ -19,18 +19,18 @@ const username = 'neilg'; // set your macOS userName here
   function watch() {
     browserSync.init({
 
-       proxy: sitename +'.test',
-        // or if site is https comment out above line and uncomment lines below
-      	// proxy: 'https://' + sitename + '.test',
-        //       host: sitename + '.test',
-        //       open: 'external',
-        //       port: 8000,
-        //       https: {
-        //           key:
-        //               '/Users/' + username + '/.config/valet/Certificates/' + sitename + '.test.key',
-        //           cert:
-        //               '/Users/' + username + '/.config/valet/Certificates/' + sitename + '.test.crt',
-        // 	      },	
+       //proxy: sitename +'.test',
+        // or if site is http comment out below lines and uncomment line above
+      	proxy: 'https://' + sitename + '.test',
+              host: sitename + '.test',
+              open: 'external',
+              port: 8000,
+              https: {
+                  key:
+                      '/Users/' + username + '/.config/valet/Certificates/' + sitename + '.test.key',
+                  cert:
+                      '/Users/' + username + '/.config/valet/Certificates/' + sitename + '.test.crt',
+        	      },	
     });
 
 	// Watched files paths

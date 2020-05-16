@@ -12,7 +12,7 @@ const imagemin = require("gulp-imagemin");
 const newer = require("gulp-newer");
 const autoprefixer = require('gulp-autoprefixer');
 
-const sitename = 'shrink'; // set your siteName here
+const sitename = 'mysite'; // set your siteName here
 const username = 'neilg'; // set your macOS userName here
 
 

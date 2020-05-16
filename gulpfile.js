@@ -18,7 +18,7 @@ const username = 'neilg'; // set your macOS userName here
 
   function watch() {
     browserSync.init({
-
+	injectChanges: false,
        //proxy: sitename +'.test',
         // or if site is http comment out below lines and uncomment line above
       	proxy: 'https://' + sitename + '.test',

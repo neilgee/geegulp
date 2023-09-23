@@ -10,11 +10,11 @@
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-imagemin": "^6.1.1",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-imagemin": "^8.0.0",
     "gulp-newer": "^1.4.0",
     "gulp-util": "^3.0.8",
-    "imagemin-pngquant": "^8.0.0"
+    "imagemin-pngquant": "^9.0.2"
   },
 
   "browserslist": [
